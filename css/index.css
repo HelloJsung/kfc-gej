@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* base */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: rem(38);
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: rem(38);
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: rem(38);
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: rem(38);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* 首屏 */
+body {
+  background: url("../images/bg2.jpg") top center no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+body .name {
+  margin-top: 7.77778rem;
+  width: 83.33%;
+  height: 0.69444rem;
+  padding-top: 0.11111rem;
+  border-radius: 0.44444rem;
+  position: absolute;
+  left: 8.34%;
+  border: 0.05556rem solid #f4558b;
+  text-align: center;
+  line-height: 0.88889rem;
+}
+
+body .name::-webkit-input-placeholder {
+  font-size: 0.52778rem;
+  line-height: 0.80556rem;
+}
+
+body .jobNum {
+  margin-top: 9.27778rem;
+  width: 83.33%;
+  height: 0.69444rem;
+  padding-top: 0.11111rem;
+  border-radius: 0.44444rem;
+  position: absolute;
+  left: 8.34%;
+  border: 0.05556rem solid #f4558b;
+  text-align: center;
+}
+
+body .jobNum::-webkit-input-placeholder {
+  font-size: 0.52778rem;
+  line-height: 0.80556rem;
+}
+
+body .cellPhone {
+  margin-top: 10.77778rem;
+  width: 83.33%;
+  height: 0.69444rem;
+  padding-top: 0.11111rem;
+  border-radius: 0.44444rem;
+  position: absolute;
+  left: 8.34%;
+  border: 0.05556rem solid #f4558b;
+  text-align: center;
+}
+
+body .cellPhone::-webkit-input-placeholder {
+  font-size: 0.52778rem;
+  line-height: 0.80556rem;
+}
+
+body textarea {
+  margin-top: 12.27778rem;
+  width: 83.33%;
+  height: 2.77778rem;
+  border-radius: 0.44444rem;
+  position: absolute;
+  left: 8.34%;
+  border: 0.05556rem solid #f4558b;
+}
+
+body .submit {
+  width: 5.19444rem;
+  height: 1.04167rem;
+  background-color: white;
+  position: absolute;
+  bottom: 1.02778rem;
+  left: 50%;
+  margin-left: -2.59722rem;
+  background: url("../images/djtj.png") center top no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+body .submit::-webkit-input-placeholder {
+  font-size: 0.52778rem;
+}
+
+body .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  position: fixed;
+  z-index: 100;
+}
+
+body .submitSuccess {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body .submitSuccess img {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  z-index: 200;
+  top: 0.69444rem;
+}
+ 
+
+ /*# sourceMappingURL= index.css.map */

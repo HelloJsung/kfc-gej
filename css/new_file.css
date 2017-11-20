@@ -1,0 +1,352 @@
+
+/*	首页部分	*/
+.index-1,.index-2,.index-3,.index-4{
+	position: initial;
+	height: 425px;
+	width: 640px;
+	float: left;
+}
+.index{
+	background-color: #FFFFFF;
+}
+.indexD{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+/**/
+.xqD{
+	width: 83%;
+	margin: 0 auto;
+}
+.xq-1,.xq-2{
+	width: 100%;
+}
+.xq-1{
+	padding-top: 20px;
+}
+.xq-2{
+	padding-bottom: 55px;
+}
+/**/
+.inline-block{
+	display: inline-block;
+}
+.block{
+	display: block;	
+}
+.right30{
+	padding-right: 20px;
+}
+.quest1,.quest3,.quest5,.quest7,.quest9,.quest11,.quest13,.quest15,.quest17{
+	padding-left: 10px;
+}
+.width img{
+	padding-top:15px ;
+}
+/**/
+.two-bg{
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+}
+.vedio{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.tow-f{
+	position: fixed;
+	bottom: 10px;
+	left: 20px;
+}
+/* 		这里是图像截取部分		*/
+#clipArea {
+	height: 100%;
+	width: 100%;
+}
+#pagethree{
+	background-color: #000000;
+}
+
+.file{
+	position: fixed;
+    display: inline-block;
+    /*padding: 10px 25px;*/
+    padding-bottom: 15px;
+    padding-left: 20px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    left: 0;
+    bottom: 0;
+}
+.xzzp{
+	color: #FFFFFF;
+}
+#file{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file div,.finish{
+	    margin: 0;
+    	border-width: 0;
+    	border-style: none;
+}
+.finish{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+    padding-bottom: 15px;
+    padding-right: 20px;
+	
+}
+/* 问卷部分CSS */
+.p4-bg{
+	height: 100%;
+	background: url(../img/bacgrund.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	/*overflow-y: hidden;*/
+}
+.width{
+	margin: 20px auto 0 auto;
+	/*overflow-y: hidden;*/
+	height: 100%;
+	width: 70%;
+}
+/*	问题1	*/
+.no1{
+	height: 20px;
+}
+.select{
+	height: 10px;
+	width: 13px;
+}
+.no1-1-1{
+	width: 23px;
+	height: 13px;
+	margin-top: 5px;
+}
+.no1-2-1{
+	width: 21px;
+	height: 15px;
+	margin-top: 5px;
+}
+.upload{
+	height: 80px;
+	width: 120px;
+	background: url(../img/sctpan.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+/*	问题2选项	*/
+.no2{
+	height: 22px;
+	width: 138px;
+	padding-top: 5px;
+}
+.no2-1-1,.no2-2-1,.no2-3-1,.no2-4-1{
+	height: 14px;
+	width: 65px;
+	padding-top: 5px;
+}
+/*	问题3选项	*/
+.no3{
+	height: 21px;
+	width: 123px;
+	padding-top: 5px;
+}
+.no3-1-1,.no4-1-1{
+	height: 13px;
+	width: 28px;
+	padding-top: 5px;
+}
+.no3-2-1,.no4-2-1{
+	height: 13px;
+	width: 38px;
+	padding-top: 5px;
+}
+/*	问题4	*/
+.no4,.no5{
+	height: 21px;
+	width: 200px;
+	padding-top: 5px;
+}
+/*	问题5	*/
+.no5-1-1,.no5-2-1,.no5-3-1{
+	height: 13px;
+	width: 85px;
+	padding-top: 5px;
+}
+.no5-4-1{
+	height: 13px;
+	width: 25px;
+	padding-top: 5px;
+}
+/*	上传图片按钮	*/
+.up-load{
+	height: 20px;
+	width: 225px;
+	padding-top: 5px;
+}
+.upload{
+	width: 200px;
+	height: 100px;
+	background: url(../img/sctpan.png);
+	margin-top: 10px;
+	position: relative;	
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-control{
+	display: none;
+}
+.btn-img{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40px;
+	width: 150px;
+	padding-bottom: 55px;
+}
+/*	低栏	*/
+.foot{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #000000;
+	bottom: 0;
+	opacity: 0.5;
+}
+.foot-all{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #dd2834;
+	bottom: 0;
+}
+.f-sy{
+	padding-top: 5px;
+	padding-left: 15px;
+	height: 42.5px;
+	width: 59px;
+}
+.f-cy{
+	position: fixed;
+	padding-top: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 42.5px;
+	width: 59px;
+}
+.f-gz{
+	position: fixed;
+	padding-top: 5px;
+	padding-right: 15px;
+	right: 0;
+	height: 42.5px;
+	width: 59px;
+}
+
+/* 	媒体查询	*/
+@media (max-width:590px){
+.index-1,.index-2,.index-3,.index-4{
+		height: 392px;
+		width: 590px;
+	}
+}
+@media (max-width:560px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 372px;
+			width: 560px;
+	}
+}
+@media (max-width:520px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 345px;
+			width: 520px;
+	}
+}
+@media (max-width:480px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 319px;
+			width: 480px;
+	}
+}
+@media (max-width:450px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 299px;
+			width: 450px;
+	}
+}@media (max-width:420px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 279px;
+			width: 420px;
+	}
+}
+@media (max-width:380px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 252px;
+			width: 380px;
+	}
+}
+@media (max-width:320px){
+.index-1,.index-2,.index-3,.index-4{
+			height: 213px;
+			width: 320px;
+	}
+}
+/* 	音乐控件	*/
+.yy{
+	position: fixed;
+	/*padding-top: 5px;*/
+	right: 30px;
+	top: 20px;
+	height: 30px;
+	width: 30px;
+}
+#lanren .on{
+	-webkit-animation: rotating 1.2s linear infinite;
+	animation: rotating 1.2s linear infinite;
+	
+}
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

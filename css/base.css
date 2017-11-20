@@ -1,0 +1,66 @@
+/* base */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: rem(38);
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: rem(38);
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: rem(38);
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: rem(38);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+ 
+
+ /*# sourceMappingURL= base.css.map */

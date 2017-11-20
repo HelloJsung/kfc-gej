@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/prefixfree.js"></script>
+    <script>
+        //页面一开始为html设置字体大小，为rem单位赋值
+        var screenWidth = window.screen.width;
+        document.querySelector("html").style.fontSize = screenWidth / 10 + 'px';
+    </script>
+    <style>
+    textarea{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <form method="post" class="form">
+        <input type="text" name="userName" class="name" placeholder="点击输入你的姓名">
+        <input type="text" name="userId" class="jobNum" placeholder="工号">
+        <input type="text" name="phone" class="cellPhone" placeholder="手机号">
+        <textarea cols="50" name="textVal" rows="10" placeholder="请填写愿望清单（请确保姓名、工号填写正确）"></textarea>
+        <input type="submit" value="" class="submit">
+    </form>
+    <div class="mask hide"></div>
+    <div class="submitSuccess hide">
+        <img src="./images/tjcg.png" alt="">
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/fastclick.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

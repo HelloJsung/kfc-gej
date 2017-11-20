@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/new_file.css">
+    <script src="./js/prefixfree.js"></script>
+    <script>
+        //页面一开始为html设置字体大小，为rem单位赋值
+        var screenWidth = window.screen.width;
+        document.querySelector("html").style.fontSize = screenWidth / 10 + 'px';
+    </script>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background: url('./images/poto.jpg')no-repeat center/cover;
+            position: relative;
+        }
+        .jietu{
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 99;
+        }
+        .upimg{
+            position: absolute;
+            left: 14%;
+            top: 44.6%;
+            width: 72%;
+            height: 23%;
+            /* background-color: deeppink; */
+            /* border: 1px solid #000; */
+            border-radius: 45px;
+        }
+        .tijiao{
+            position: absolute;
+            /* border: 1px solid #000; */
+            top: 74%;
+            left: 22%;
+            width: 56%;
+            height: 7%;
+            background-color: transparent;
+            border-radius: 38px;
+
+        }
+    </style>
+</head>
+
+<body>
+        <div class="jietu">
+                <div id="clipArea" class="ui-page ui-page-theme-a ui-page-active" style="background-color: #6f6f6f;"></div>
+                <div class="foot"></div>
+                <a href="javascript:;" class="file">
+                    <div class="xzzp" style="font-weight: normal;">添加图片</div>
+                    <input type="file" id="file">
+                </a>
+                <a href="#page4" data-transition="slide" id="clipBtn" class="finish" style="color: #FFFFFF;font-size: 16px;font-family: '微软雅黑';font-weight: normal;text-decoration:none;">完 成</a>
+                <!-- <img class="up-load block" src="img/question6.png" /> -->
+                
+        </div>
+        <a class="upimg" class="upload" id="view">
+            <!-- <div style="padding-top: 0;width: 100%;height: 100%;" class="upload" id="view"><div> -->
+        </a>
+        <form action="hello.php" method="post" class="upform">
+                <div class="game-box-main">
+                    <div class="inputbox">
+                        <div class="form-control">
+                        <input value="1" class="input-lg text-inp " name="userName" maxlength="4" placeholder="输入你的名字试试">
+                        </div>
+                    <!-- <img class="btn-img btn-block" src="img/scan.png" style="padding-top: 5px;"/> -->
+                    <input value=" " class="tijiao" type="submit">
+                    </div>
+                </div>
+                </form>
+</body>
+<!-- <script src="./js/fastclick.js"></script> -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/poto_clip.js"></script>
+<script src="./js/PhotoClip.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    // 截图部分代码
+	var pc = new PhotoClip('#clipArea', {
+		size: 300,
+		outputSize: 400,
+		adaptive: ['100%', '400'],
+		file: '#file',
+		view: '#view',
+		ok: '#clipBtn',
+		loadStart: function() {
+			console.log('开始读取照片');
+		},
+		loadComplete: function() {
+			console.log('照片读取完成');
+		},
+		done: function(dataURL) {
+            console.log('123')
+			var str = dataURL;
+			var str1 = str.substring(23)
+			$.post("poto.php",
+		    {
+		      data:str1
+		    });
+		},
+		fail: function(msg) {
+			alert(msg);
+		}
+    });
+    $('.upimg').on('click',function(){
+        $('.jietu').fadeIn()
+    })
+    $('.finish').on('click',function(){
+        $('.jietu').fadeOut()        
+    })
+</script>
+</html>
